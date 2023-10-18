@@ -11,7 +11,7 @@
 int _printf(const char *format, ...)
 {
 	unsigned int i, j = 0, n = 0;
-	va_list argi;
+	va_list arg;
 
 	va_start(arg, format);
 
@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 		{
 			n = _prints(va_arg(arg, char *));
 			j = j + n;
-			j -= 3;
+			j -= 4;
 		}
 		else if (format[i + 1] == '%')
 		{
