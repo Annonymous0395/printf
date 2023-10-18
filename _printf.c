@@ -1,4 +1,5 @@
 #include "main.h"
+<<<<<<< HEAD
 /**
  * _printf - is a function that selects the correct function to print.
  * @format: identifier to look for.
@@ -42,4 +43,34 @@ Here:
 	}
 	va_end(args);
 	return (len);
+=======
+#include <stdarg.h>
+
+/** _printf - Entry poin
+ * @format: arg to be printed
+ *
+ * Return - number of char printed
+ */
+
+int _printf(const char *format, ...)
+{
+	unsigned int i, j = 0;
+	va_list arg;
+	va_start(arg, format);
+
+	for (i = 0; format[i] != '\0'; i++)
+	{
+		if (format[i] != '%')
+		{
+			_putchar(format[i]);
+		}
+		else if (format[i + 1] == 'c')
+		{
+			i++;
+			_putchar(va_arg(arg, int));
+		}
+		j++;
+	}
+	return (j);
+>>>>>>> 83ea5f1d37b2dabb022723f58e94e7a4e01a35d2
 }

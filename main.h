@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #ifndef MAIN_H
 #define MAIN_H
 
@@ -43,6 +44,11 @@ int _strlenc(const char *s);
 int printf_37(void);
 int printf_char(va_list val);
 int printf_string(va_list val);
+=======
+#ifndef _MAIN_H
+#define _MAIN_H
+
+>>>>>>> 83ea5f1d37b2dabb022723f58e94e7a4e01a35d2
 int _putchar(char c);
 int _printf(const char *format, ...);
 
