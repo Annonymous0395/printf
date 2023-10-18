@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdarg.h>
 
 /** _printf - Entry poin
  * @format: arg to be printed
@@ -8,18 +9,17 @@
 
 int _printf(const char *format, ...)
 {
-	unsigned int i, j;
+	unsigned int i, j = 0;
 	va_list arg;
 	va_start(arg, format);
 
-	for (i = 0; format[i] != '0'; i++);
+	for (i = 0; format[i] != '\0'; i++)
 	{
 		if (format[i] != '%')
 		{
 			_putchar(format[i]);
-			i++;
 			j++;
 		}
 	}
-	return (j)
+	return (j);
 }
