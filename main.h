@@ -3,6 +3,8 @@
 
 int _putchar (char c);
 int _printf(const char *format, ...);
-int _prints(char *s);
+int _prints(va_list val);
+int _printc(va_list val);
+int _print%(void)
 
 #endif
