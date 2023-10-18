@@ -2,7 +2,7 @@
 
 /**
  * _prints - Entry point
- * @s = string to be printed
+ * @s: string to be printed
  *
  * Return: len of string s
  */
