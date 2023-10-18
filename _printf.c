@@ -9,7 +9,7 @@
 
 int _printf(const char *format, ...)
 {
-	unsigned int i, j = 0;
+	unsigned int i, j = 0 n = 0;
 	va_list arg;
 	va_start(arg, format);
 
@@ -23,6 +23,12 @@ int _printf(const char *format, ...)
 		{
 			i++;
 			_putchar(va_arg(arg, int));
+		}
+		else if (format[i + 1] == 's')
+		{
+			n = _prints(va_arg(arg, char *s));
+			j = j + n;
+			j -= 1;	
 		}
 		j++;
 	}
