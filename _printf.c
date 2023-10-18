@@ -1,5 +1,5 @@
 #include "main.h"
-<<<<<<< HEAD
+
 /**
  * _printf - is a function that selects the correct function to print.
  * @format: identifier to look for.
@@ -43,7 +43,7 @@ Here:
 	}
 	va_end(args);
 	return (len);
-=======
+
 #include <stdarg.h>
 
 /** _printf - Entry poin
@@ -78,5 +78,4 @@ int _printf(const char *format, ...)
 		j++;
 	}
 	return (j);
->>>>>>> 83ea5f1d37b2dabb022723f58e94e7a4e01a35d2
 }
